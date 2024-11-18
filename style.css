@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    padding: rem;
+    background-color: rgb(165, 116, 116);
+    width:100vw
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+}
+
+li{
+    margin-top: 2rem;
+}
+
+article{
+    margin: 30px;
+    padding: 10px;
+}
+h2, h1{
+    display: flex;
+    justify-content: center;
+}
+
+#txt1{
+    margin: 2rem;
+}
+
+#img-livro{
+    margin: 2rem;
+}
+
+#videos{
+  display: flex;
+  justify-content: center;  
+}
+
+#autores{
+    margin: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#especialista{
+    
+    
+}
+
+@media  screen and (max-width: 480px) {
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    
+}
+
+@media screen and (min-width: 1280px){
+    
+}
+
