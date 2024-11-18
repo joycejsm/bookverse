@@ -34,8 +34,14 @@ h2, h1{
 }
 
 #img-livro{
-    margin: 2rem;
+    
+    width: 50%;
 }
+
+#img-livro img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
 
 #videos{
   display: flex;
