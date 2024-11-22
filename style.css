@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --font-principal: 'Merriweather';
+    --fundo-azul-claro: #F0F8FF; 
+    --azul-medio: #6495ED; 
+    --azul-escuro: #003366;
+}
+body{
+    font-family: var(--font-principal);
+    
+}
 nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, auto));
@@ -18,6 +30,12 @@ nav{
 
 li{
     margin-top: 2rem;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
 }
 
 article{
@@ -35,11 +53,12 @@ h2, h1{
 
 #img-livro{
     
-    width: 50%;
+    width: 30%;
+    border: 1px solid black;
 }
 
 #img-livro img { 
-    width: 100%; 
+    width: 70%; 
     height: auto; 
     border-radius: 8px;
 }
