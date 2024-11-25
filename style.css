@@ -47,16 +47,19 @@ nav{
     font-family: var(--font-content);
     font-weight: 500;
     color: var(--snow-white);
-    border-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     border: none;
+    margin-top: 0.4rem;
     padding: 8px;
     width: 6%;
   }
   input[type="text"]{
     height: 2rem;
-    border-radius: 10px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
     border: 1px solid var(--dusty-rose);
-    margin: 8px;
+    margin-top: 8px;
   }
 #logo img{
     width: 100px;
@@ -162,8 +165,8 @@ h2{
     color: var(--snow-white);
 }
 
-article > button {
-    background-color: var(--taupe);
+#button-comment {
+    background: linear-gradient(to bottom, var(--dusty-rose), var(--taupe));
     font-family: var(--font-content);
     font-weight: 500;
     color: var(--snow-white);
@@ -171,6 +174,16 @@ article > button {
     border: none;
     padding: 8px;
     width: 6%;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+#button-comment:hover{
+    background: var(--taupe);
+}
+
+article > p {
+    margin: 3rem;
 }
 
 #img-livro{
@@ -191,25 +204,54 @@ article > button {
 }
 
 #videos{
+    background-color: var(--snow-white);
+}
+
+iframe{
+    margin: 2rem;
+}
+
+#videos{
   display: flex;
   justify-content: center;  
 }
 
 #autores{
-    margin: 2rem;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: var(--taupe);
+    color: var(--snow-white);
 }
 
-/* #especialista{
-    
-    
-} */
+.card-autor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem;
+    margin: 3rem;
+}
+
+#autores h3{
+    font-family: var(--font-highlight);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.autor{
+    display: flex;
+    justify-content: center;
+}
+.autor img{
+    width: 10rem;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+}
+
 
 @media  screen and (max-width: 480px) {
     
