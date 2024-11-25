@@ -27,7 +27,7 @@ body{
 
 header{
     /* background-image: linear-gradient(to top, var(--charcoal), var(--ash-brown)); */
-    border: 1px solid black;
+    border: 1px solid white;
     
 } 
 nav{
@@ -35,6 +35,28 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(50px, auto));
     padding: 2rem;
     width:100vw
+  }
+
+  form{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+  form > button{
+    background-color: var(--taupe);
+    font-family: var(--font-content);
+    font-weight: 500;
+    color: var(--snow-white);
+    border-radius: 40px;
+    border: none;
+    padding: 8px;
+    width: 6%;
+  }
+  input[type="text"]{
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--dusty-rose);
+    margin: 8px;
   }
 #logo img{
     width: 100px;
