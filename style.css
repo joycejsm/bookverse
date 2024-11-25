@@ -89,7 +89,7 @@ h1{
     font-family: var(--font-highlight);
     color: var(--charcoal);
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 2rem;
 }
 
@@ -106,7 +106,7 @@ main{
 }
 
 .background-grid{
-    border: 1px solid orange;
+    
     /* position: absolute; */
     /* top: 0;
     left: 0; 
@@ -118,13 +118,16 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+    border: 2px solid black;
 }
 .grit-item{
-    border: 1px solid green;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    color: white;
+    background-color: #3498db;
 }
 
 .foto-1{
@@ -145,6 +148,31 @@ main{
     align-content: center;
 }
 
+h2{
+    font-family: var(--font-highlight);
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+#conteudo-2{
+    background-color: var(--charcoal);
+    color: var(--snow-white);
+}
+
+article > button {
+    background-color: var(--taupe);
+    font-family: var(--font-content);
+    font-weight: 500;
+    color: var(--snow-white);
+    border-radius: 40px;
+    border: none;
+    padding: 8px;
+    width: 6%;
+}
+
 #img-livro{
     
     width: 50%;
@@ -158,7 +186,8 @@ main{
 #img-livro img { 
     width: 90%; 
     height: 90%; 
-    border-radius: 8px;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
 }
 
 #videos{
