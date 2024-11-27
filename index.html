@@ -57,9 +57,11 @@
 
                 
                 <h1>Bookverse - Sua Biblioteca Virtual</h1>
-                <p id="txt1">
-                    Bem-vindo ao Bookverse, onde a leitura e o aprendizado se encontram. Nossos serviços exclusivos promovem o compartilhamento de livros, resenhas e recursos educacionais, redefinindo a experiência de leitura.
-                </p>
+                <div id="intro">
+                    <p id="txt1">
+                        Bem-vindo ao Bookverse, onde a leitura e o aprendizado se encontram. Nossos serviços exclusivos promovem o compartilhamento de livros, resenhas e recursos educacionais, redefinindo a experiência de leitura.
+                    </p>
+                </div>
             </section>
 
             <section id="conteudo-2">
@@ -80,58 +82,61 @@
 
             <section id="videos">
                 <h2>Vídeos</h2>
-                <img src="assets/svgs_collection/big-grid.svg" alt="">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4-veptcn3iU?si=D02EcRyIRvc81MHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <div #iframe-container>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4-veptcn3iU?si=D02EcRyIRvc81MHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </section>
             
-            <section id="autores">
-                <h3>Autores</h3>
+            <h2 id="title-autor">Autores</h2>
+            <section id="autores">       
                 <div class="card-autor">
                     <div class="autor">
                         <img src="https://images-na.ssl-images-amazon.com/images/I/51B9HnCqawL.jpg" alt="Autor de Entendendo Algoritmos" >
                     </div>
-                    <h3>Nome: Aditya Y. Bhargava</h3>
-                    <p>Area de especialização: Engenheiro de Software</p>
-                    <p>Descrição: Aditya Bhargava é um engenheiro de software com experiência tanto em Ciência da Computação quanto em Artes Plásticas</p>
-                    <p>Redes sociais</p>
-                </div>
-                <ul>
-                    <li>
+                    <h3><strong>Nome:</strong> Aditya Y. Bhargava</h3>
+                    <p><strong>Area de especialização:</strong> Engenheiro de Software</p>
+                    <p><strong>Descrição:</strong> Aditya Bhargava é um engenheiro de software com experiência tanto em Ciência da Computação quanto em Artes Plásticas</p>
+                    <p><strong>Redes sociais:</strong></p>
+                    <span>
+                        <img src="assets/linkedin.png" alt="" id="linkedin-icon">
                         <a href="https://www.linkedin.com/in/adityabhargava/">linkedin</a>
-                    </li>
-                </ul>
+                    </span>
+                </div>
+            
             </section>
 
             <section id="contato">
+
+                <h3 id="title-contact">Entre em contato</h3>
                 <form action="/submit-form" method="post" id="contact" name="contatos">
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" placeholder="Primeiro nome" required>
-                    </div>
-                    <div>
-                        <label for="sobrenome">Sobrenome:</label>
-                        <input type="text" name="" id="sobrenome" placeholder="Sobrenome completo" required>
-                    </div>
-                    
-                    <div>
-                        <label for="iemail">Email:</label>
-                        <input type="email" name="" id="iemail" placeholder="lorem@email.com" required>
-                    </div>
-        
-                    <div>
-                        <button type="submit" class="botao">Enviar</button>
-                        <button type="reset" class="botao">Limpar</button>
-                    </div>
-        
-                    <div>
-                        <p><label for="texto">Deixe sua mensagem:</label> </p>
-                        <textarea name="" id="texto" spellcheck="true"></textarea>
+                    <div id="container-form-contato">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" placeholder="Primeiro nome" required>
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome:</label>
+                            <input type="text" name="" id="sobrenome" placeholder="Sobrenome completo" required>
+                        </div>
+                        
+                        <div>
+                            <label for="iemail">Email:</label>
+                            <input type="email" name="" id="iemail" placeholder="lorem@email.com" required>
+                        </div>
+                        <div>
+                            <p><label for="texto">Deixe sua mensagem:</label> </p>
+                            <textarea name="" id="texto" spellcheck="true"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="botao">Enviar</button>
+                        </div>
                     </div>
                 </form>  
             </section>
 
             <footer>
-                <ul>
+                <ul id="rodape">
                     <li>
                         <a href="">Política de Privacidade</a>
                     </li>

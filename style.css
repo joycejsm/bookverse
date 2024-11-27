@@ -27,7 +27,6 @@ body{
 }
 
 header{
-    /* background-image: linear-gradient(to top, var(--charcoal), var(--ash-brown)); */
     border: 1px solid white;
     display: grid;    
     grid-template-columns: 1fr;
@@ -50,7 +49,8 @@ ul {
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
-    margin: 0;
+    margin-right: 12rem;
+    margin-left: 12rem;
     padding: 0;
 }
 
@@ -62,7 +62,6 @@ ul li{
     grid-column: 3/4;
     display: flex;
     
-    margin-right: 10rem;
   }
   #button-search{
     background-color: var(--taupe);
@@ -77,12 +76,19 @@ ul li{
     width: 8rem;
     height: 2.2rem;
   }
+
   #pesquisa{
     height: 2.2rem;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    border: 1px solid var(--dusty-rose);
+    border: 2px solid var(--dusty-rose);
     margin-top: 8px;
+    
+  }
+
+  #pesquisa:focus{
+    border-color: var(--soft--peach);
+    outline: none;
   }
 
 
@@ -109,15 +115,19 @@ h1{
     color: var(--charcoal);
     font-weight: lighter;
     font-size: 3rem;
-    margin: 2rem;
+    margin-top: 2rem;
 }
 
 main{
     width: 90vw;
     margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     background-color: white;
-    border: 2px solid blueviolet;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
+
 
 }
 
@@ -158,9 +168,14 @@ main{
     position: relative;
     z-index: 2;
 }
+#intro{
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
 
 #txt1{
     margin: 2rem;
+    font-size: 1.5rem;
 }
 
 #conteudo {
@@ -239,14 +254,11 @@ article > p{
     grid-column: 2/3;
     grid-row: 1/4;
     width: 50%;
-    /* border: 1px solid black; */
     position: relative;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
-
     z-index: 2;
     
 }
@@ -263,32 +275,46 @@ article > p{
 }
 
 #videos{
-    background-color: var(--snow-white);
+
+  justify-content: center;
+  background-color: var(--snow-white);
+  display: grid;
+  place-items: center;  
+}
+
+#iframe-container{
+    width: 70%;
+    
+}
+#iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    
 }
 
 iframe{
     margin: 2rem;
 }
 
-#videos{
-  display: flex;
-  justify-content: center;  
-}
-
 #autores{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 20px;
-    background-color: var(--taupe);
-    color: var(--snow-white);
+    background-color: var(--white);
+    color: var(--ash-brown);
+}
+
+#title-autor{
+    display: flex;
+    justify-content: center;
 }
 
 .card-autor{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 25rem;
     margin: 3rem;
 }
@@ -303,12 +329,90 @@ iframe{
     justify-content: center;
 }
 .autor img{
+    margin: 3rem;
     width: 10rem;
     border-top-left-radius: 20rem;
     border-top-right-radius: 20rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
+}
+span{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--charcoal);
+}
+
+#linkedin-icon{
+    width: 1.5rem;
+    
+}
+#contato{
+    background-color: var(--charcoal);
+}
+#contact{
+    color: var(--snow-white);
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    padding-bottom: 3rem;
+}
+
+#title-contact{
+    color: var(--snow-white);
+    font-family: var(--font-highlight);
+    text-align: start;
+    margin: 3rem;
+    font-size: 2rem;
+    padding-top: 3rem;
+    font-weight: lighter;
+}
+#container-form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#nome, #sobrenome, #iemail {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 15px;
+    outline: none;
+}
+#texto{
+    border-radius: 15px;
+    outline: none;
+    width: 20rem;
+    height: 15rem;
+    resize: none;
+}
+.botao{
+    background: linear-gradient(to bottom, var(--dusty-rose), var(--taupe));
+    font-family: var(--font-content);
+    font-weight: 500;
+    color: var(--snow-white);
+    border-radius: 40px;
+    border: none;
+    padding: 0px;
+    width: 7rem;
+    height: 3rem;
+}
+
+.botao:hover{
+    background: var(--taupe);
+}
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 
