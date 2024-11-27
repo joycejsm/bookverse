@@ -14,20 +14,19 @@
             <div id="logo">
                 <img src="./assets/Untitled_logo_1_free-file.jpg" alt="Logo do site">
             </div>
-            <!-- <ul> -->
+            <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#conteudo">Conteúdo</a></li>
                 <li><a href="#videos">Vídeos</a></li>
                 <li><a href="#autores">Autores</a></li>
                 <li><a href="#contato">Contato</a></li>
-            <!-- </ul> -->
+            </ul>
+            <form action="/search" method="get"> 
+                <input type="text" id="pesquisa" name="query" placeholder="Digite sua pesquisa" required> 
+                <button type="submit" id="button-search">Pesquisar</button>
+            </form>
         </nav>
-        <!-- <span>Campo de pesquisa</span> -->
-        <form action="/search" method="get"> 
-            <!-- <label for="pesquisa">Pesquisa:</label>  -->
-            <input type="text" id="pesquisa" name="query" placeholder="Digite sua pesquisa" required> 
-            <button type="submit">Pesquisar</button>
-        </form>
+        
     </header>
 
         <main>
@@ -38,25 +37,28 @@
                 
                 <div class="foto-1">
                     <img src="https://i.pinimg.com/736x/81/25/43/8125437e462adc5bc5eccfefcdac1aa6.jpg" alt="">
-                </div>
-                <div class="background-grid">
-                    <div class="grid-item">1</div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">4</div>
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">6</div>
-                    <div class="grid-item">7</div>
-                    <div class="grid-item">8</div>
-                    <div class="grid-item">9</div>
-                    <div class="grid-item">10</div>
-                    <div class="grid-item">11</div>
-                    <div class="grid-item">12</div>
+
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                      </div>
+    
                 </div>
 
+                
                 <h1>Bookverse - Sua Biblioteca Virtual</h1>
                 <p id="txt1">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe laborum perferendis numquam ea accusamus quae ullam ducimus voluptatem nisi rem deleniti eaque iusto tempore earum, nobis dolores eligendi aliquam necessitatibus?
+                    Bem-vindo ao Bookverse, onde a leitura e o aprendizado se encontram. Nossos serviços exclusivos promovem o compartilhamento de livros, resenhas e recursos educacionais, redefinindo a experiência de leitura.
                 </p>
             </section>
 
@@ -64,16 +66,21 @@
                 
                 <article>
                     <h2>Livro do dia</h2>
-                    <div id="img-livro"><img src="https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg" alt="Livro Entendendo algoritmos"></div>
-                    <p>"Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos" de Aditya Y. Bhargava é um livro que apresenta uma abordagem acessível e visual para entender algoritmos. Ele é repleto de ilustrações e exemplos práticos que tornam conceitos complexos mais fáceis de compreender.
-                    O livro aborda tarefas básicas como ordenação e busca, e depois avança para problemas mais complexos como compressão de dados e inteligência artificial. Cada exemplo é detalhado e inclui diagramas e códigos completos em Python3.
-                    É uma excelente leitura para programadores autodidatas, engenheiros e qualquer pessoa interessada em aprender mais sobre algoritmos de uma maneira envolvente e visual</p>
+                    <p>Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos" de Aditya Y. Bhargava é um livro que apresenta uma abordagem acessível e visual para entender algoritmos. Ele é repleto de ilustrações e exemplos práticos que tornam conceitos complexos mais fáceis de compreender.
+                        O livro aborda tarefas básicas como ordenação e busca, e depois avança para problemas mais complexos como compressão de dados e inteligência artificial. Cada exemplo é detalhado e inclui diagramas e códigos completos em Python3.
+                        É uma excelente leitura para programadores autodidatas, engenheiros e qualquer pessoa interessada em aprender mais sobre algoritmos de uma maneira envolvente e visual</p>
+                        <button id="button-comment">Comente</button>
 
-                    <button id="button-comment">Comente</button>
+                        <img src="assets/svgs_collection/big-grid.svg" alt="" id="big-grid">
+                        <div id="img-livro">
+                        <img src="https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg" alt="Livro Entendendo algoritmos">
+                    </div>
                 </article>
             </section>
 
             <section id="videos">
+                <h2>Vídeos</h2>
+                <img src="assets/svgs_collection/big-grid.svg" alt="">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-veptcn3iU?si=D02EcRyIRvc81MHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
             
@@ -96,7 +103,7 @@
             </section>
 
             <section id="contato">
-                <form action="/submit-form" method="post">
+                <form action="/submit-form" method="post" id="contact" name="contatos">
                     <div>
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" placeholder="Primeiro nome" required>
