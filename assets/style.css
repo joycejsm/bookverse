@@ -425,6 +425,55 @@ a{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px){
+
+    .foto-1 img{
+        width: 14rem;
+    }
+
+    .grid-container{
+        width: 14rem;
+        height: 19rem;
+        top: 20rem;
+    }
+    
+    h1{
+        margin: 2rem;
+        text-align: center;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    h2{
+        order: 1;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #big-grid{
+        position: absolute;
+        z-index: 1;
+        width: 25rem;
+        height: 18rem;
+        top: 15rem;
+        left: 15rem;
+        height: auto;
+    }
+
+    #img-livro{
+        order: 2;
+        z-index: 2;
+        margin-top: 1rem;
+    }
+
+    p{
+        order: 3;
+        margin: 2rem;
+        text-align: center;
+    }
     
 }
 
